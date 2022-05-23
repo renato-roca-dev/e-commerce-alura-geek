@@ -91,11 +91,11 @@ document.getElementById("btn-edit-product-form").addEventListener("click", funct
     }
     if(errorName == false && errorCategory == false && errorPrice == false && errorDesc == false){
         atualizaProduto(imgResult.src, nameInput.value, categoryOption.value, priceInput.value, idInput.value, descriptionInput.value)
-        window.location.href = "/allProducts.html"
+        window.location.href = "/pages/allProducts.html"
     }
 })
 
 document.getElementById("btn-cancel-edit-product").addEventListener("click", function(e){
     e.preventDefault();
-    location.assign("/allProducts.html")
+    location.assign("/pages/allProducts.html")
 })

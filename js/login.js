@@ -24,7 +24,7 @@ document.getElementById("btn-submit").addEventListener("click", function(e){
 
     if(email.value == admin.email && password.value == admin.password){
         localStorage.setItem("login", "true");
-        window.location.assign("/allProducts.html")
+        window.location.assign("../pages/allProducts.html")
     } else{
         localStorage.setItem("login", "false");
     }

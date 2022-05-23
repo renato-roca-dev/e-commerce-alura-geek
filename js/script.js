@@ -1,4 +1,4 @@
-var url = "/product.html";
+var url = "/pages/product.html";
 const criaNovoProduto = (id, img, name, price, category) => {
     const novaDiv = document.createElement("div");
     novaDiv.className = "box"
@@ -61,7 +61,7 @@ http.onload = () => {
                 var editID = e.target.id
                 let booleanConfirm = confirm("Tem certeza que quer editar o produto de ID: " + editID + "?")
                 if(booleanConfirm == true){
-                    location.assign(`/editProduct.html#${editID}`)
+                    location.assign(`/pages/editProduct.html#${editID}`)
                 } else{
                     alert("Você cancelou a opção de editar o produto de ID: " + editID + "!");
                 }
