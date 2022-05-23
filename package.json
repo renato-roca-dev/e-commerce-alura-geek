@@ -1,0 +1,14 @@
+{
+  "name": "e-commerce-one",
+  "version": "1.0.0",
+  "description": "Fake REST API AluraGeek",
+  "main": "index.js",
+  "scripts": {
+    "json:server": "json-server --watch db.json"
+  },
+  "author": "renato-roca-dev",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

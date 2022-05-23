@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f8f47e19bd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/addProduct.css">
+    <link rel="icon" href="imgs/geek-icon.svg">
+    <title>AluraGeek - Editar produto</title>
+</head>
+<body>
+    <header class="wrapper flex" id="headerNav">
+        <div class="header-logo">
+            <a href="index.html"><img src="imgs/alurageek-logo-header.svg" alt="Logo AluraGeek com controle"></a>
+        </div>
+        <div class="header-login-button">
+            <a href="login.html" class="login-button" id="btn-login">Login</a>
+        </div>
+    </header>
+    <main class="wrapper">
+        <div id="add-product">
+            <h1>Editar produto</h1>
+            <form id="form-add-product">
+                <div id="file-drag-upload" class="flex">
+                    <div id="drag-image" class="flex">
+                        <i class="fa-solid fa-image"></i>
+                        <p id="text-desktop">Arraste para adicionar uma imagem para o produto</p>
+                        <p id="text-mobile">Adicionar uma imagem para o produto</p>
+                        <input type="file" name="product-image" id="image-product" accept="image/png, image/jpeg" required>
+                        <img src="#" id="img-result-display">
+                    </div>
+                    <p id="file-drag-upload-paragraph">Ou</p>
+                    <div id="btn-upload">
+                        <label for="image-product" id="input-file-btn">Procure no seu computador</label>
+                    </div>
+                </div>
+                <div id="image-result">
+                    <p id="img-result-name"></p>
+                </div>
+                <div class="input-text">
+                    <label for="product-name"></label>
+                    <input type="text" name="product-name" id="product-name" class="input-product" maxlength="20" placeholder="Nome do produto" required>
+                </div>
+                <div class="input-select">
+                    <select name="product-category" id="product-category">
+                        <option value="null" selected>Categoria do produto</option>
+                        <option value="Star Wars">Star Wars</option>
+                        <option value="Consoles">Consoles</option>
+                        <option value="Diversos">Diversos</option>
+                    </select>
+                </div>
+                <div class="input-text">
+                    <label for="product-price"></label>
+                    <input type="number" name="product-price" id="product-price" class="input-product" maxlength="200" step="0.01" placeholder="Preço do produto" required>
+                </div>
+                <div class="input-text">
+                    <label for="product-id"></label>
+                    <input type="number" name="product-id" id="product-id" class="input-product" maxlength="200" step="1" placeholder="ID do produto" required disabled>
+                </div>
+                <div class="input-text">
+                    <textarea name="product-desc" id="product-desc" placeholder="Descrição do produto" maxlength="400"></textarea>
+                </div>
+                <button type="submit" class="btn-form" id="btn-edit-product-form">Atualizar produto</button>
+                <button type="submit" class="btn-form" id="btn-cancel-edit-product">Cancelar</button>
+            </form>
+        </div>
+        
+    </main>
+    <section class="pre-footer">
+        <div class="pre-footer-div wrapper flex">
+            <div class="pre-footer-logo-social flex">
+                <a href="index.html"><img src="imgs/alurageek-logo-header.svg" alt="Logo AluraGeek com controle"></a>
+                <div class="pre-footer-social-medias flex">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <hr class="pre-footer-hr">
+            <div class="pre-footer-navigation flex">
+                <nav class="pre-footer-nav">
+                    <h3>Sobre nós</h3>
+                    <ul class="pre-footer-ul">
+                        <li><a href="#">Quem nós somos</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                        <li><a href="#">Nossas lojas</a></li>
+                    </ul>
+                </nav>
+                <nav class="pre-footer-nav">
+                    <h3>Serviços</h3>
+                    <ul class="pre-footer-ul">
+                        <li><a href="#">Programa fidelidade</a></li>
+                        <li><a href="#">Quero ser franqueado</a></li>
+                        <li><a href="#">Anuncie aqui</a></li>
+                    </ul>
+                </nav>
+                <nav class="pre-footer-nav">
+                    <h3>Dúvidas?</h3>
+                    <ul class="pre-footer-ul">
+                        <li><a href="#">Fale conosco</a></li>
+                        <li><a href="#">Termos de uso</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <footer>
+        Desenvolvido por <a href="https://github.com/renato-roca-dev" target="blank">@renato-roca-dev</a>
+    </footer>
+    <script type="module" src="js/editProduct.js"></script>
+    <script src="js/arrStorage.js"></script>
+</body>
+</html>

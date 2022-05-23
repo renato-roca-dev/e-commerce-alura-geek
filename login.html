@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f8f47e19bd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login-contact.css">
+    <link rel="icon" href="imgs/geek-icon.svg">
+    <title>AluraGeek - Login</title>
+</head>
+<body>
+    <header class="wrapper flex" id="headerNav">
+        <div class="header-logo">
+            <a href="index.html"><img src="imgs/alurageek-logo-header.svg" alt="Logo AluraGeek com controle"></a>
+        </div>
+        <div class="header-login-button">
+            <a href="login.html" class="login-button" id="btn-login">Login</a>
+        </div>
+    </header>
+    <main id="main-login">
+        <div id="main-form">
+            <h1>Iniciar sessão</h1>
+            <form id="form-login">
+                <div class="input-text">
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" class="input" placeholder="E-mail" maxlength="500" spellcheck="false" autocomplete="off" required>
+                </div>
+                <div class="input-text">
+                    <label for="password"></label>
+                    <input type="password" name="password" id="password" class="input" placeholder="Senha" maxlength="250" spellcheck="false" autocomplete="off" required>
+                </div>
+                <input type="submit" name="submit" id="btn-submit" value="Entrar">
+            </form>
+        </div>
+    </main>
+    <section class="pre-footer">
+        <div class="pre-footer-div wrapper flex">
+            <div class="pre-footer-logo-social flex">
+                <a href="index.html"><img src="imgs/alurageek-logo-header.svg" alt="Logo AluraGeek com controle"></a>
+                <div class="pre-footer-social-medias flex">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <hr class="pre-footer-hr">
+            <div class="pre-footer-navigation flex">
+                <nav class="pre-footer-nav">
+                    <h3>Sobre nós</h3>
+                    <ul class="pre-footer-ul">
+                        <li><a href="#">Quem nós somos</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                        <li><a href="#">Nossas lojas</a></li>
+                    </ul>
+                </nav>
+                <nav class="pre-footer-nav">
+                    <h3>Serviços</h3>
+                    <ul class="pre-footer-ul">
+                        <li><a href="#">Programa fidelidade</a></li>
+                        <li><a href="#">Quero ser franqueado</a></li>
+                        <li><a href="#">Anuncie aqui</a></li>
+                    </ul>
+                </nav>
+                <nav class="pre-footer-nav">
+                    <h3>Dúvidas?</h3>
+                    <ul class="pre-footer-ul">
+                        <li><a href="#">Fale conosco</a></li>
+                        <li><a href="#">Termos de uso</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <footer>
+        Desenvolvido por <a href="https://github.com/renato-roca-dev" target="blank">@renato-roca-dev</a>
+    </footer>
+    <script src="js/login.js"></script>
+    <script src="js/arrStorage.js"></script>
+</body>
+</html>

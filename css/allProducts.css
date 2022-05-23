@@ -1,0 +1,55 @@
+main{
+    padding: 32px 0;
+    min-height: 100vh;
+}
+main h1{
+    color: #464646;
+    font-size: 32px;
+    font-weight: 700;
+}
+#btn-add-product{
+    display: none;
+    width: fit-content;
+    background-color: #FA372C;
+    border: none;
+    outline: none;
+    padding: 16px 25px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+#btn-add-product:hover{
+    cursor: pointer;
+    padding: 16px 30px;
+    transition: 0.3s;
+}
+#main-text-btn-products{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-category{
+    padding: 32px 0;
+}
+@media screen and (max-width: 545px){
+    #main-text-btn-products {
+        flex-direction: column;
+        align-items: center;
+    }
+    #btn-add-product{
+        margin-top: 20px;
+    }
+    .box{
+        width: 160px;
+    }
+}
+@media screen and (max-width: 375px){
+    .box-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .box {
+        width: 250px;
+    }
+}
