@@ -14,7 +14,7 @@ const produtoSelecionado = (img, name, price, description, category) => {
         return novaDiv;
 }
 
-var url = "/pages/product.html"
+var url = "product.html"
 const criaNovoProduto = (id, img, name, price, category) => {
     const novaDiv = document.createElement("div");
     novaDiv.className = "box"

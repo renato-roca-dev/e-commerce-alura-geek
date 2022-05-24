@@ -31,8 +31,6 @@ Senha: alura123
 ![WEB](https://github.com/renato-roca-dev/e-commerce-alura-geek/blob/master/imgs/WEB2.png)
 ![WEB](https://github.com/renato-roca-dev/e-commerce-alura-geek/blob/master/imgs/WEB3.png)
 
-[Link para o projeto](https://renato-roca-dev.github.io/e-commerce-alura-geek)
-
 ## Processo de criação
 
 ### O que usei

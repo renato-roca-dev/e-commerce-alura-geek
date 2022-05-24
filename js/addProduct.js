@@ -106,6 +106,6 @@ form.addEventListener("click", (ex) => {
     }
     if(error == false && errorName == false && errorCategory == false && errorPrice == false && errorDesc == false){
         productService.criaProduto(category.value, id.value, name.value, img.src, price.value, description.value)
-        window.location.href = "/allProducts.html"
+        window.location.href = "../pages/allProducts.html"
     }
 })

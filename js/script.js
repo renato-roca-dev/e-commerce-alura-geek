@@ -1,4 +1,4 @@
-var url = "/pages/product.html";
+var url = " ../pages/product.html";
 const criaNovoProduto = (id, img, name, price, category) => {
     const novaDiv = document.createElement("div");
     novaDiv.className = "box"

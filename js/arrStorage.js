@@ -1,8 +1,9 @@
 var btnAddProduct = document.getElementById("btn-add-product");
 if(localStorage.getItem("login", "true").includes("true")){  
-    document.getElementById("btn-login").setAttribute("href", "/pages/addProduct.html")
+    console.log(window.location.pathname )
+    document.getElementById("btn-login").setAttribute("href", "../pages/addProduct.html")
     document.getElementById("btn-login").innerHTML = "Menu adm.";
-    if(window.location.pathname == "/pages/allProducts.html"){
+    if(window.location.pathname == "../pages/allProducts.html"){
         btnAddProduct.style.display = "block"
     }
 }
